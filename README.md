@@ -1,4 +1,4 @@
-# Chennai House Price Prediction
+## Chennai House Price Prediction
 This repository contains code for a machine learning model that predicts house prices in Chennai, India. The model is trained on a dataset of various features related to the houses, such as area, number of bedrooms, number of bathrooms, location, and more.
 
 The goal of this project is to help buyers determine a fair price for a house and provide insights to sellers on what factors can fetch them higher prices for their properties.
@@ -6,26 +6,28 @@ The goal of this project is to help buyers determine a fair price for a house an
 Dataset
 The dataset used for training the model is stored in the file train-chennai-sale.csv. It contains the following variables:
 
-PRT_ID: Project ID
-AREA: Area where the house is located
-INT_SQFT: Total area of the house in square feet
-DATE_SALE: Date on which the house was sold
-DIST_MAINROAD: Distance from the house to the main road (in meters)
-N_BEDROOM: Number of bedrooms
-N_BATHROOM: Number of bathrooms
-N_ROOM: Number of rooms
-SALE_COND: Sale conditions
-PARK_FACIL: Parking facility availability
-DATE_BUILD: Date on which the house was built
-BUILD_TYPE: Type of the house
-UTILITY_AVAIL: Utilities available for the owner of the house
-STREET: Street where the house is located
-MZZONE: Chennai regions divided into multiple zones
-QS_ROOMS, QS_BATHROOM, QS_BEDROOM, QS_OVERALL: Masked data
-REG_FEE: Registration fees
-COMMIS: Commission
-SALE_PRICE: Price at which the house was sold
-Getting Started
+. PRT_ID: Project ID
+. AREA: Area where the house is located
+. INT_SQFT: Total area of the house in square feet
+. DATE_SALE: Date on which the house was sold
+. DIST_MAINROAD: Distance from the house to the main road (in meters)
+. N_BEDROOM: Number of bedrooms
+. N_BATHROOM: Number of bathrooms
+. N_ROOM: Number of rooms
+. SALE_COND: Sale conditions
+. PARK_FACIL: Parking facility availability
+. DATE_BUILD: Date on which the house was built
+. BUILD_TYPE: Type of the house
+. UTILITY_AVAIL: Utilities available for the owner of the house
+. STREET: Street where the house is located
+. MZZONE: Chennai regions divided into multiple zones
+. QS_ROOMS, QS_BATHROOM, QS_BEDROOM, QS_OVERALL: Masked data
+. REG_FEE: Registration fees
+. COMMIS: Commission
+. SALE_PRICE: Price at which the house was sold
+
+
+# Getting Started
 To use this code, follow the steps below:
 
 Clone this repository to your local machine.
@@ -38,8 +40,8 @@ The code performs several preprocessing steps on the dataset, including:
 Renaming columns to lowercase
 Dropping irrelevant columns (PRT_ID, REG_FEE, COMMIS)
 Handling missing values by filling them with appropriate statistical techniques
-Correcting data types of columns (n_bedroom, n_bathroom, date_sale, date_build)
-Creating a new column 'house_age' based on the date_sale and date_build columns
+Correcting data types of columns (N_BEDROOM, N_BATHROOM, DATE_SALE, DATE_BUILD)
+Creating a new column house_age based on the DATE_SALE and DATE_BUILD columns
 Encoding categorical variables using ordinal encoding and one-hot encoding
 Model Building and Evaluation
 The code builds and evaluates multiple machine learning models for house price prediction, including:
@@ -73,5 +75,3 @@ Conclusion
 The Chennai House Price Prediction model can be used by buyers to estimate fair prices for houses and assist sellers in understanding the factors that can fetch higher prices for their properties. The model provides a valuable tool for the real estate market in Chennai, helping both buyers and sellers make informed decisions.
 
 Please feel free to explore the code and adapt it to your specific needs. If you have any questions or suggestions, please open an issue or reach out to the repository owner.
-
-Happy house hunting and selling!
